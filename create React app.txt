@@ -5,6 +5,48 @@ vai
 npx create-react-app jsx
 
 DEPENDENCIES
--Webpack
--Babel
--Dev Server
+-Webpack // bundeler
+-Babel // compiles to older js versions
+-Dev Server //runs the local server
+
+START
+npm start
+ctlr+c //stop app
+npm start --host 0.0.0.0 //available on local server.
+100.64.0.230:3000 //local ip
+
+IMPORT
+import
+or
+const React = require 
+
+COMPONENT
+is function or class
+
+BEAUTIFY
+F1 > Beautify
+
+JSX
+Bavel convert JSX to JS
+https://babeljs.io/en/repl
+
+JSX vs HTML
+<button style="background-color: blue; color: white;">Submit</button>
+<button style={{backgroundColor: 'blue', color: 'white'}}>Submit</button>
+- double quotes for strings
+- single quotes for values and other
+
+<label class="label" for="name">Enter name:</label>
+<label className="label" for="name">Enter name:</label>
+
+jsx can reference js variables  and functions.
+objects are not valid refference in text (only object instances)
+
+2.21.
+in JSX instead of 'for', use 'htmlFor'
+
+
+---PART 3
+Component NESTING
+Component REUSABILITY
+Component CONFIGURATION
