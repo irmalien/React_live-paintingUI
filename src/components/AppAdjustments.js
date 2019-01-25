@@ -1,14 +1,16 @@
 
 import React from 'react';
-import AdjField from './AdjField';
+import $ from 'jquery';
+import 'jquery-ui';
 import AdjSlider from './AdjSlider';
 
 class AppAdjustments extends React.Component {
   state={};
   
+
   render(){
     return (
-      <div className="ui left visible vertical inverted sidebar menu" style={{paddingTop: '70px', left: '60px'}}>
+      <div className="ui left visible vertical inverted sidebar menu" style={{paddingTop: '60px', left: '60px'}}>
 
         <div className="item">
           <div className="header">Particle</div>
@@ -17,7 +19,7 @@ class AppAdjustments extends React.Component {
               < AdjSlider 
                 label="Max size"/>
               < AdjSlider 
-                label="Max size"/>
+                label="Min size"/>
         </div>
 
         <div className="item">
@@ -41,6 +43,6 @@ class AppAdjustments extends React.Component {
     );
   }
 }
-
+ 
 export default AppAdjustments;
 

@@ -7,7 +7,8 @@ class AdjSlider extends React.Component {
     super(props);
     this.state={
       label: props.label,
-      valueMin: 1,
+      labelValue: 0,
+      valueMin: 0,
       valueMax: 100,
       value: 50
     }
@@ -25,12 +26,19 @@ class AdjSlider extends React.Component {
   render(){
     return (
       <div className="slidecontainer">
-        <label>{this.state.label}</label>
+        <div style={{display: "flex", justifyContent: "space-between"}}>
+          <label>{this.state.label}</label>
+          <label style={{opacity: this.state.labelValue}}>{this.state.value}</label> 
+        </div>
+        
         <input type="range" 
         min={this.state.valueMin} 
         max={this.state.valueMax} 
         value={this.state.value}
-        onChange={(e) => this.setState( {value: e.target.value} )} 
+        onMouseDown={() => this.setState( {labelValue: 100} )}
+        onChange={(e) => this.setState( {value: e.target.value} )}
+        onMouseUp={() => this.setState( {labelValue: 0} )}
+        // onmousedown="myFunction()
         className="slider" 
         id="myRange">
         </input>
