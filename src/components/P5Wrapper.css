@@ -1,0 +1,14 @@
+.p5wrapper {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* .p5wrapper canvas {
+
+} */

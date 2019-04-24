@@ -1,6 +1,6 @@
 import './AdjSlider.css';
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 class AdjSlider extends React.Component {
   constructor(props){
@@ -46,5 +46,13 @@ class AdjSlider extends React.Component {
     );
   }
 }
+
+//PropTypes
+AdjSlider.propTypes = {
+  // todos: PropTypes.object.isRequired,
+  key: PropTypes.func.isRequired,
+  value: PropTypes.func.isRequired
+}
+
 
 export default AdjSlider;
