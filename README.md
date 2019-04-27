@@ -1,2 +1,2 @@
-# React app UI
-React interface design for uppcoming app. Project under progress.
+# React app user interface
+React ui for uppcoming app. Project under progress.
